@@ -8,6 +8,8 @@
 所以这个游戏暂时知识player一个人和电脑对战了，来一张效果图 ![游戏效果图](http://7xrycm.com1.z0.glb.clouddn.com/blackJack%E6%95%88%E6%9E%9C%E5%9B%BE.PNG)
 ，期间我模仿的是一个网页版小游戏，然后界面布局基本差不多，只是相比之下我的界面太丑了，动画也不丰富 [17yy小游戏](http://www.17yy.com/f/play/123857.html)
 
+> 兼容性：modern browser，然后就是能勉强兼容手机吧。
+
 
 自己觉得不太“优雅的地方”：
 
