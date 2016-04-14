@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>black jack game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no">
+</head>
+<body>
+<div class="wrap">
+    <div class="container">
+        <!--提示-->
+        <div class="tips">
+            玩家赢了
+        </div>
+
+        <!--庄家纸牌-->
+        <div class="banker-card">
+            <img src="images/1a.JPG" alt="card">
+            <img src="images/unknow.JPG" alt="card">
+        </div>
+
+        <!--玩家纸牌-->
+        <div class="player-card">
+            <!--每一张图片增加left值即可-->
+            <img src="images/1a.JPG" alt="card">
+            <img src="images/1b.JPG" alt="card">
+        </div>
+        <!--玩家加倍之后的第二幅牌-->
+        <div class="player-card-double">
+
+        </div>
+
+        <!--保险按钮-->
+        <button class="insurance btn-ins-de">保险</button>
+
+        <!--发牌 和 玩家得分显示-->
+        <button class="deal btn-ins-de">发牌</button>
+
+        <!--每轮游戏增加的筹码 add-bet-->
+        <div class="add-bet btn-ope-mon"></div>
+
+        <!--四个按钮-->
+        <div class="btn-ope-mon operation">
+            <button>分牌</button>
+            <button>加倍</button>
+            <button>拿牌</button>
+            <button>停牌</button>
+        </div>
+        <div class="btn-ope-mon money">
+            <button class="m5">5</button>
+            <button class="m10">10</button>
+            <button class="m25">25</button>
+            <button class="m100">100</button>
+        </div>
+
+        <!--余额-->
+        <footer class="footer">
+            <div class="bet">
+                赌注：<span class="betNum">5</span> yuan
+            </div>
+            <div class="balance">
+                余额：<span class="balanceNum">100</span> yuan
+            </div>
+        </footer>
+    </div>
+</div>
+
+
+<script src="js/myapp.js"></script>
+</body>
+</html>
+
+<!--分牌 还有一点问题-->

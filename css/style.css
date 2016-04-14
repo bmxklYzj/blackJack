@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    font: 25px/1.5 "Microsoft YaHei", Tahoma, sans-serif;
+}
+
+.wrap {
+    background-color: #77C4D3;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.container {
+    background-image: url(../images/blackJackBackground.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+
+    position: relative;
+    width: 800px;
+    min-width: 400px;
+    min-height: 500px;
+    height: 100%;
+    margin: 0 auto;
+    /*background-color: #ccc;*/
+}
+
+@media screen and (max-width: 800px)  {
+    .container {
+        width: 100%;
+    }
+}
+/*---------------顶部tips----------------*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fadeIn {
+    -webkit-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.fadeOut {
+    -webkit-animation: fadeOut 1s;
+    -o-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+}
+.container .tips {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+
+    width: 13em;
+    height: 3em;
+    line-height: 3em;
+    z-index: 100;
+    text-align: center;
+    color: #fff;
+    background-color: #4FA6B6;
+    -webkit-box-shadow: 0 0 1em #A7DFEA;
+    -moz-box-shadow: 0 0 1em #A7DFEA;
+    box-shadow: 0 0 1em #A7DFEA;
+
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+/*---------------庄家纸牌----------------*/
+.container .banker-card {
+    position: absolute;
+    top: 2em;
+    left: 5em;
+}
+.container .banker-card img {
+    position: absolute;
+    width: 4em;
+}
+/*---------------玩家纸牌----------------*/
+.container .player-card {
+    position: absolute;
+    bottom: 14em;
+    left: 5em;
+}
+.container .player-card img {
+    width: 4em;
+    position: absolute;
+}
+
+.container .player-card-double {
+    position: absolute;
+    bottom: 14em;
+    left: 11em;
+    background-color: #ccc;
+}
+.container .player-card-double img {
+    position: absolute;
+    width: 4em;
+}
+/*---------------保险和发牌----------------*/
+.container .btn-ins-de{
+    position: absolute;
+    bottom: 15em;
+
+    width: 3em;
+    height: 3em;
+    background-color: #4FA6B6;
+    color: #fff;
+    border: 0; /*button默认有个border 2px*/
+    box-shadow: 0 0 1em #A7DFEA;
+}
+.container .insurance {
+    left: 0;
+
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+.container .deal {
+    right: 0;
+
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+/*---------------每轮游戏增加的筹码 add-bet--------*/
+.container .add-bet {
+    position: absolute;
+    bottom: 5em;
+    text-align: center;
+}
+.container .add-bet button {
+    margin: 0;
+}
+/*==================btn-ope-mon=================*/
+.btn-ope-mon {
+    position: absolute;
+    bottom: 2.5em;
+    width: 100%;
+    text-align: center;
+}
+.btn-ope-mon button {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    border: 0;
+    margin: 0 10px;
+    /*border: 5px solid #00CCCC;*/
+    box-shadow: 0 0 1em #A7DFEA;
+    color: #888;
+    background-color: #4FA6B6;
+    color: #fff;
+    font-weight: bold;
+}
+.btn-ope-mon .m5 {
+    background-color: #59ABBA;
+}
+.btn-ope-mon .m10 {
+    background-color: #3E98A9;
+}
+.btn-ope-mon .m25 {
+    background-color: #13859A;
+}
+.btn-ope-mon .m100 {
+    background-color: #057387;
+}
+/*==================footer================*/
+.footer {
+    color: #999;
+    position: absolute;
+    bottom: .5em;
+    width: 100%;
+}
+.footer .bet {
+    float: left;
+    margin-left: 1em;
+}
+.footer .balance {
+    float: right;
+    margin-right: 1em;
+}
+.footer span {
+    color: #fff;
+}
